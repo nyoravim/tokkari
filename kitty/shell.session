@@ -4,7 +4,7 @@ enabled_layouts tall
 layout tall
 
 # vim
-launch --bias=25 nvim
+launch --bias=40 nvim
 
 # cmatrix
 launch zsh -c "~/.config/zsh/panels/cmatrix.zsh"
