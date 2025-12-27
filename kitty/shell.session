@@ -1,0 +1,16 @@
+cd ~/src
+
+enabled_layouts tall
+layout tall
+
+# vim
+launch --bias=25 nvim
+
+# cmatrix
+launch zsh -c "~/.config/zsh/panels/cmatrix.zsh"
+
+# main shell
+launch --bias=20
+
+# cava
+launch zsh -c "~/.config/zsh/panels/cava.zsh"

@@ -1,0 +1,56 @@
+// -*- mode: jsonc -*-
+{
+    "height": 15,
+    "spacing": 4,
+    "modules-left": [
+    ],
+    "modules-center": [
+        "clock",
+        "pulseaudio"
+    ],
+    "modules-right": [
+        "network",
+        "cpu",
+        "memory",
+        "temperature",
+        "battery",
+    ],
+    "clock": {
+        "format-alt": "{:%Y-%m-%d}",
+        "tooltip": false
+    },
+    "cpu": {
+        "format": "cpu {usage}%"
+    },
+    "memory": {
+        "format": "mem {}%"
+    },
+    "temperature": {
+        "format": "temp {temperatureC}°C"
+    },
+    "battery": {
+        "format": "battery {capacity}%",
+        "format-full": "battery full",
+        "format-charging": "battery {capacity}% charging",
+        "format-plugged": "battery {capacity}% not charging"
+    },
+    "network": {
+        "format-wifi": "{essid} ({signalStrength}%)",
+        "format-ethernet": "{ipaddr}/{cidr} (ethernet)",
+        "tooltip-format": "{ifname} via {gwaddr}",
+        "format-linked": "{ifname} (No IP) ",
+        "format-disconnected": "no wifi/ethernet",
+        "format-alt": "{ifname}: {ipaddr}/{cidr}"
+    },
+    "pulseaudio": {
+        "format": "out {volume}%",
+        "format-muted": "out muted",
+        "format-source": "in {volume}%",
+        "format-source-muted": "in muted",
+        "on-click": "pavucontrol",
+        "format-icons": {
+            "default": "A"
+        },
+        "max-volume": 100
+    }
+}

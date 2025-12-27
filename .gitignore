@@ -1,0 +1,13 @@
+# ignore everything
+/*/
+
+# git files
+.gitignore
+.gitmodules
+
+# configs
+!hypr/
+!nvim/
+!kitty/
+!zsh/
+!waybar/
