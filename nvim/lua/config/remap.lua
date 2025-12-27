@@ -81,30 +81,6 @@ function export.map_keys()
             ts.grep_string({ search = vim.fn.input("Grep > ") })
         end },
     })
-
-    -- debugging
-    local dap = require("dap")
-
-    wk.add({
-        { "<leader>db", dap.toggle_breakpoint },
-        { "<leader>dc", dap.continue },
-        { "<C-Tab>", dap.step_over },
-        { "<leader>di", dap.step_into },
-        { "<leader>do", dap.step_out },
-        { "<leader>dr", dap.repl.open },
-        { "<leader>du", dap.up },
-        { "<leader>dd", dap.down },
-        { "<leader>ds", dap.close },
-    })
-
-    -- tasks
-    local overseer = require("overseer")
-
-    wk.add({
-        { "<C-B>", function() overseer.run_template({ tags = { overseer.TAG.BUILD } }) end },
-        { "<leader>to", overseer.open },
-        { "<leader>tc", overseer.close },
-    })
 end
 
 return export
