@@ -2,8 +2,10 @@
 /*/
 
 # git files
-.gitignore
-.gitmodules
+!.gitignore
+
+# neovim plugin lock
+lazy-lock.json
 
 # configs
 !hypr/
