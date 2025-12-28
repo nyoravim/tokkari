@@ -1,20 +1,25 @@
 // -*- mode: jsonc -*-
 {
-    "height": 15,
+    "height": 20,
     "spacing": 4,
     "modules-left": [
+        "hyprland/window"
     ],
     "modules-center": [
-        "clock",
-        "pulseaudio"
+        "clock"
     ],
     "modules-right": [
+        "pulseaudio",
         "network",
         "cpu",
         "memory",
         "temperature",
         "battery",
     ],
+    "hyprland/window": {
+        "icon": true,
+        "icon-size": 18
+    },
     "clock": {
         "format-alt": "{:%Y-%m-%d}",
         "tooltip": false
