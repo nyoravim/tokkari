@@ -7,6 +7,9 @@
 # neovim plugin lock
 lazy-lock.json
 
+# dont care
+mimeapps.list
+
 # configs
 !hypr/
 !nvim/
