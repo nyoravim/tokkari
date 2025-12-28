@@ -1,6 +1,8 @@
 #!/usr/bin/env zsh
 
-hyprctl hyprpaper unload all > /dev/null
+sleep 2
+
+hyprctl hyprpaper unload all
 
 SCRIPT_DIR=$(realpath $(dirname $0))
 WALLPAPERS=($(ls -d $SCRIPT_DIR/wallpapers/*.png))
@@ -9,5 +11,5 @@ WALLPAPERS=($(ls -d $SCRIPT_DIR/wallpapers/*.png))
 CURRENT_WALLPAPER=${WALLPAPERS[$WALLPAPER_INDEX]}
 echo "Setting wallpaper: $CURRENT_WALLPAPER"
 
-hyprctl hyprpaper preload $CURRENT_WALLPAPER > /dev/null
-hyprctl hyprpaper wallpaper ,$CURRENT_WALLPAPER > /dev/null
+hyprctl hyprpaper preload $CURRENT_WALLPAPER
+hyprctl hyprpaper wallpaper ,$CURRENT_WALLPAPER
