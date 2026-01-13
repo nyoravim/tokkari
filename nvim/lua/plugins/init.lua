@@ -133,11 +133,9 @@ require("lazy").setup({
                 "folke/tokyonight.nvim",
                 "catppuccin/nvim",
                 "echasnovski/mini.icons",
-                "stevearc/overseer.nvim",
             },
             config = function()
                 local lualine = require("lualine")
-                local overseer = require("overseer")
 
                 lualine.setup({
                     options = {
@@ -145,7 +143,6 @@ require("lazy").setup({
                     },
                     sections = {
                         lualine_x = {
-                            "overseer",
                         },
                     },
                     extensions = {
