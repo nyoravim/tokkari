@@ -9,6 +9,7 @@ lazy-lock.json
 
 # dont care
 mimeapps.list
+pavucontrol.ini
 
 # configs
 !hypr/
