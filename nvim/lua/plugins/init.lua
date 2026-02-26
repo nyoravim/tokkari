@@ -151,33 +151,6 @@ require("lazy").setup({
                 })
             end,
         },
-
-        -- discord rpc
-        {
-            "andweeb/presence.nvim",
-            event = "VeryLazy",
-            config = function()
-                local presence = {
-                    auto_update = true,
-                    neovim_image_text = "nyoravim",
-                    main_image = "neovim",
-                    log_level = nil,
-                    show_time = false,
-                    enable_line_number = false,
-                    buttons = true,
-
-                    editing_text = "editing %s",
-                    file_explorer_text = "browsing %s",
-                    git_commit_text = "committing",
-                    plugin_manager_text = "managing plugins",
-                    reading_text = "viewing %s",
-                    workspace_text = "working on %s",
-                    line_number_text = "%s/%s",
-                }
-
-                require("presence").setup(presence)
-            end,
-        },
     },
 
     install = { colorscheme = { "catppuccin" } },
