@@ -1,15 +1,12 @@
 # ignore everything
 /*/
+/*
 
 # git files
 !.gitignore
 
-# neovim plugin lock
+# neovim
 lazy-lock.json
-
-# dont care
-mimeapps.list
-pavucontrol.ini
 
 # configs
 !hypr/
