@@ -10,3 +10,7 @@ export PATH="$HOME/.local/bin:$PATH"
 
 # installed rust binaries
 export PATH="$HOME/.cargo/bin:$PATH"
+
+export GOPATH="$HOME/go"
+# go-installed binaries (gopls, etc.)
+export PATH="$GOPATH/bin:$PATH"
